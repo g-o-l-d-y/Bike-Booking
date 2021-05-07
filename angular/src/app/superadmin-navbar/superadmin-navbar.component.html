@@ -1,0 +1,56 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #b2ee0d;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #b5f506;
+}
+
+.active {
+  background-color: hsl(73, 90%, 53%);
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+</style>
+<body>
+
+
+<div class="navbar">
+  <!-- <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Dashboard</a> 
+  <a href="#"><i class="fa fa-fw fa-profile"></i> Prof</a> 
+  <a href="#"><i class="fa fa-fw fa-Bookings"></i> Bookings</a>  -->
+  <!-- <a href="#"><i class="fa fa-fw fa-user"></i> Login</a> -->
+  
+  <nav>
+    <!-- <p>NEO BIKES</p> -->
+    <a routerLink="/superadminDashboard">Dashboard</a>
+    <button (click)=loginService.logOut()>Logout</button>
+</nav>
+</div>
+
+</body>
+</html> 
+
+
+

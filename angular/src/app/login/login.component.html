@@ -1,0 +1,18 @@
+<div class="container">
+    <div>
+      User Name : <input type="text" name="username" [(ngModel)]="username"><br>
+      Password : <input type="password" name="password" [(ngModel)]="password"><br>
+      Role : 
+      <select name="userRole" id="userRole"  maxlength="50" [(ngModel)]="userRole">
+        <option value="ROLE_USER">USER</option>
+        <option value="ROLE_ADMIN">ADMIN</option>
+        <option value="ROLE_SUPERADMIN">SUPER ADMIN</option>
+      </select>
+    </div>
+    <button (click)=checkLogin() class="btn btn-success">
+      Login
+    </button>
+    <button routerLink="/signup" class="btn btn-success">
+      Signup
+    </button>
+  </div>

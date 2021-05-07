@@ -1,0 +1,49 @@
+<html>
+<style>
+h1{text-align:center;}
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<body>
+
+
+<div class="navbar">
+  <!-- <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Dashboard</a> 
+  <a href="#"><i class="fa fa-fw fa-profile"></i> Prof</a> 
+  <a href="#"><i class="fa fa-fw fa-Bookings"></i> Bookings</a>  -->
+  <!-- <a href="#"><i class="fa fa-fw fa-user"></i> Login</a> -->
+  <!-- <nav>
+   
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/profile">profile</a>
+</nav> -->
+<app-admin-navbar></app-admin-navbar>
+</div>
+
+	
+		<table class="center">
+			
+            <tr>
+				<td><label>Enter Bike Number</label></td>
+				<td><input type="text" name="bikeNo" id="bikeNo" [(ngModel)]="bikeNo"/></td>
+			</tr>
+			
+		
+            <tr>
+				<td> <label>  Enter Amount Per Hour </label> </td>
+				<td><input type="number" name="amount"id="amount" [(ngModel)]="price"/> </td>
+			</tr>
+
+    
+			<tr>
+				<td></td>
+				<td><button (click)=addBike()>Add Bike</button></td>
+			</tr>
+
+		
+		</table>		
+
+</body>
+</html> 

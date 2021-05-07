@@ -1,0 +1,18 @@
+<app-user-navbar></app-user-navbar>
+<table class="table table-bordered">
+    <thead>
+        <th><h3>Bike No.</h3></th>
+        <th><h3>Rent per hour</h3></th>
+        <th><h3>Admin</h3></th>
+    </thead>
+</table>
+<table *ngFor="let bike of bikes" class="table table-bordered">
+    <tr>
+        <td><h3>{{bike.bikeNo}}</h3></td>
+        <td><h3>{{bike.price}}</h3></td>
+        <td><h3>{{bike.admin}}</h3></td>
+    </tr>
+</table>
+
+
+

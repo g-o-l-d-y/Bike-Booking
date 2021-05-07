@@ -1,0 +1,38 @@
+<html>
+<style>
+h1{text-align:center;}
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<body>
+
+
+
+<app-admin-navbar></app-admin-navbar>
+	
+		<table class="center">
+			
+            <tr>
+				<td><label>Enter Bike Number</label></td>
+				<td><input type="text" name="bikeNo" id="bikeNo" [(ngModel)]="bikeNo"/></td>
+			</tr>
+			
+		
+            <tr>
+				<td> <label>  Enter Amount Per Hour </label> </td>
+				<td><input type="number" name="price"id="price" [(ngModel)]="price"/> </td>
+			</tr>
+    
+			<tr>
+				<td></td>
+				<td><button (click)=editBike()>Update</button></td>
+			</tr>
+
+		
+		</table>		
+
+</body>
+</html> 
+

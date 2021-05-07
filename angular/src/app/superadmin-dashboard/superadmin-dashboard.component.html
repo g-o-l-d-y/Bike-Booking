@@ -1,0 +1,19 @@
+<app-superadmin-navbar></app-superadmin-navbar>
+<table class="table table-bordered">
+    <thead>
+        <th><h3>Username</h3></th>
+        <th><h3>Email</h3></th>
+        <th><h3>Mobile Number</h3></th>
+        <th><h3>Role</h3></th>
+        <td><h3>Delete</h3></td>
+    </thead>
+</table>
+<table *ngFor="let user of users" class="table table-bordered">
+    <tr>
+        <td><h3>{{user.username}}</h3></td>
+        <td><h3>{{user.email}}</h3></td>
+        <td><h3>{{user.mobileNumber}}</h3></td>
+        <td><h3>{{user.userRole}}</h3></td>
+        <td><button (click) = toDelete(user.username)>DeleteBike</button></td>
+    </tr>
+</table>

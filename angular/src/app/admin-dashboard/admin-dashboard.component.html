@@ -1,0 +1,21 @@
+<app-admin-navbar></app-admin-navbar>
+<table class="table table-bordered">
+    <thead>
+        <th><h3>Bike No.</h3></th>
+        <th><h3>Status</h3></th>
+        <th><h3>Rent per hour</h3></th>
+        <th><h3>Admin</h3></th>
+        <td><h3>Edit</h3></td>
+        <td><h3>Delete</h3></td>
+    </thead>
+</table>
+<table *ngFor="let bike of bikes" class="table table-bordered">
+    <tr>
+        <td><h3>{{bike.bikeNo}}</h3></td>
+        <td><h3>{{bike.status}}</h3></td>
+        <td><h3>{{bike.price}}</h3></td>
+        <td><h3>{{bike.admin}}</h3></td>
+        <td><button (click) = toEdit(bike.bikeId)>EditBike</button></td>
+        <td><button (click) = toDelete(bike.bikeId)>DeleteBike</button></td>
+    </tr>
+</table>

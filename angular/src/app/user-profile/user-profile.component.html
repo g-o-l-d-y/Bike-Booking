@@ -1,0 +1,70 @@
+<app-user-navbar></app-user-navbar>
+<!DOCTYPE html>
+<html>
+<style>
+h1{text-align:center;}
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<body>
+
+
+<div class="navbar">
+  <!-- <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Dashboard</a> 
+  <a href="#"><i class="fa fa-fw fa-profile"></i> Prof</a> 
+  <a href="#"><i class="fa fa-fw fa-Bookings"></i> Bookings</a>  -->
+  <!-- <a href="#"><i class="fa fa-fw fa-user"></i> Login</a> -->
+  <!-- <nav>
+   
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/profile">profile</a>
+</nav> -->
+</div>
+
+<form>
+	
+		<table class="center">
+            <tr>
+				<td> <label> Username: </label> </td>
+				<td><input type="text" name="username" id="username" maxlength="50" [(ngModel)]="username"/></td>
+			</tr>
+			
+            <tr>
+				<td><label>Password:</label></td>
+				<td><input type="password" name="pass" id="password" minlength="8"  [(ngModel)]="password"/></td>
+			</tr>
+            <tr>
+				<td> <label> E-mail: </label> </td>
+				<td><input type="email" name="email" id="email" maxlength="50" [(ngModel)]="email"/></td>
+			</tr>
+			<tr>
+				<td> <label>  Mobile Number </label> </td>
+				<td><input type="tel" name="mobileNumber"id="mobileNumber"  maxlength="50"  [(ngModel)]="mobileNumber"/>
+			</tr>
+            <tr>
+				<td> <label>  Age </label> </td>
+				<td><input type="number" name="age" id="age"  maxlength="50"  [(ngModel)]="age"/>
+			</tr>
+		
+			<tr>
+				<td><label> User Type:</label></td>
+				<td>
+                    {{userRole}}
+				</td>
+			</tr>
+            
+			
+			<tr>
+				<td></td>
+				<td><button (click)=editProfile()>Update</button></td>
+			</tr>
+
+		
+		</table>
+		
+	    </form>
+
+</body>
+</html> 

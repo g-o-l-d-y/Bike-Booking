@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Signup</title>
+<style>
+h1{text-align:center;}
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body>
+	 <h1>SIGNUP FORM </h1>
+	
+	
+		<table class="center">
+			<tr>
+				<td> <label> Enter Username: </label> </td>
+				<td><input type="text" name="username" id="username" maxlength="50" [(ngModel)]="username"/> </td>
+			</tr>
+            <tr>
+				<td><label>Password:</label></td>
+				<td><input type="password" name="password" id="password" minlength="8" [(ngModel)]="password"/></td>
+			</tr>
+			<tr>
+				<td> <label> Enter Mobile Number: </label> </td>
+				<td><input type="number" name="mobileNumber"id="mobileNumber"  maxlength="50" [(ngModel)]="mobileNumber"/> </td>
+			</tr>
+		
+			<tr>
+				<td><label> User Role:</label></td>
+				<td>
+                    <select name="userRole" id="userRole"  maxlength="50" [(ngModel)]="userRole">
+                        <option value="ROLE_USER">USER</option>
+                        <option value="ROLE_ADMIN">ADMIN</option>
+                        <option value="ROLE_SUPERADMIN">SUPER ADMIN</option>
+                    </select>
+                </td>
+			</tr>
+            <tr>
+                <td><label>Email:</label></td>
+                <td><input type="email" name="email" id="email" [(ngModel)]="email"/><td>
+            </tr>
+            <tr>
+                <td><label>Age:</label></td>
+                <td><input type="number" name="age" id="age" [(ngModel)]="age"/><td>
+            </tr>
+            
+			
+			<tr>
+				
+				
+				<td><nav>
+					<button (click)=signUp()>Sign Up</button><br/>
+				</nav></td>
+					
+			</tr>
+			<tr>
+				
+				
+				<td><nav>
+					<button routerLink="/login">Login</button><br/>
+				</nav></td>
+					
+			</tr>
+		
+		</table>
+		
+		
+    </body>
+</html>
+
